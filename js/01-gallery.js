@@ -22,7 +22,7 @@ gallery.addEventListener('click', onClick);
 
 function onClick(evt) {
 	const { target } = evt;
-	if (target.classList.contains('gallery')) {
+	if (target.nodeName !== 'IMG') {
 		return;
 	}
 	// console.log(target);
